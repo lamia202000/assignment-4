@@ -1,13 +1,11 @@
-function matchFinder (kicuakta){
-  for( var i=0; i<2; i++){
-    return true;
-  }
+function matchFinder(string1 , string2){
+const name=string1.includes(string2);
+if(name===true){
+  return true;
 }
-
-
-var kicuakta=string1,string2
-
-
-
-  var myRe=  matchFinder ("John Doe","ohn");
-  console.log(myRe);
+else{
+  return false;
+}
+}
+const output= matchFinder("John Doe","ohn");
+console.log(output);
